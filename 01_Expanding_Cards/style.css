@@ -38,7 +38,8 @@
     margin: 0;
  }
  .panel.active{
-    flex: 5;
+    color:beige;
+    flex: 6;
  }
  .panel.active h3{
     text-decoration: underline;
@@ -46,7 +47,7 @@
     transition: opacity 0.7s ease-in 0.4s;
  }
 
- /*600px den büyük olduğunda 5 resim küçğk olduğunda 3 resim görünmesi için*/
+ /*600px den büyük olduğunda 5 resim küçük olduğunda 3 resim görünmesi için*/
  @media (max-width: 600px){
     .container{
         width: 100vw;
