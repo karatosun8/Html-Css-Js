@@ -25,24 +25,34 @@ prev.addEventListener("click",()=>{
 });
 
 
-function update (){
-    circles.forEach((circle,index)=>{
+
+
+function update(){
+    circles.forEach((circle, index) => {
         if(index < currentActive){
-            circle.classList.add("active")
-        } else {
-            circle.classList.remove("active")
+            circle.classList.add('active');
+        } else{
+            circle.classList.remove('active');
         }
     })
 
     const actives = document.querySelectorAll(".active");
 
-        if(currentActive ===1){
-            prev.disabled=true;
-        } else if (currentActive ===circles.lenght){
-            next.disabled =true;
-        }else {
-            prev.disabled =false;
-            next.disabled =false
-        }
+     //console.log(actives.length, circles.length);
+     //console.log(actives.length / circles.length);
+     //console.log((actives.length / circles.length) *100);
+     //console.log((actives.length -1) / (circles.length -1) *100);
+     //console.log((actives.length -1) / (circles.length -1) *100 + '%');
 
+    progress.style.width = (actives.length -1) / (circles.length -1) *100 + '%';
+
+
+    if(currentActive === 1){
+        prev.disabled = true;
+    } else if(currentActive === circles.length){
+        next.disabled = true;
+    } else{
+        prev.disabled = false;
+        next.disabled = false;
+    }
 }
