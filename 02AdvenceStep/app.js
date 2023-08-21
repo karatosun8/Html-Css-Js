@@ -43,7 +43,7 @@ function update(){
      //console.log((actives.length / circles.length) *100);
      //console.log((actives.length -1) / (circles.length -1) *100);
      //console.log((actives.length -1) / (circles.length -1) *100 + '%');
-
+    //Sayılar arası çizgiler için
     progress.style.width = (actives.length -1) / (circles.length -1) *100 + '%';
 
 
