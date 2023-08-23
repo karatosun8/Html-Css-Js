@@ -132,6 +132,247 @@ header ul li a:hover {
     }
   }
 
-
-
 /*----------header-------------*/
+/*----------home-------------*/
+.right,
+.left {
+    width: 50%;
+}
+.box_left {
+    width: 70%;
+    position: relative;
+    margin: 10px 30px 0 0;
+    height: 90vh;
+  }
+  .box_right {
+    width: 30%;
+    height: 90vh;
+  }
+  .home .box_right .img {
+    height: 45vh;
+  }
+  .home{
+    height: 80vh;
+  }
+  .home .box_left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .home .left {
+    position: relative;
+    z-index: 1;
+    padding: 30% 0 0 10%;
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+  }
+  .home h1 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .home span {
+    color: #5e5e5e;
+    font-size: 18px;
+  }
+  .home .box_right img {
+    padding: 10px 0 0 0;
+  }
+  .home .box_right .img:nth-child(2) {
+    margin-top: 10px;
+  }
+  button {
+    border: 2px solid black;
+    color: black;
+    padding: 15px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    border: 2px solid #FF7A00;
+    background: #FF7A00;
+    color: white;
+    cursor: pointer;
+  }
+
+/*----------home-------------*/
+/*----------offer-------------*/
+.top {
+    margin-top: 10%;
+  }
+  
+  .mtop {
+    margin-top: 5%;
+  }
+  
+  .offer .left {
+    margin: 0 15px 0 0;
+  }
+  
+  .offer .right {
+    margin: 0 0 0 15px;
+  }
+  
+  .offer .right,
+  .offer .left {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .offer .text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding: 50px;
+  }
+  
+  .offer h1 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  .offer h5 {
+    margin-top: 20px;
+  }
+  
+  .offer a {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  
+  /*----------offer-------------*/
+
+  /*----------Product-------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .Product {
+    text-align: center;
+  }
+  
+  .Product h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  
+  .Product .box {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    opacity: 0;
+    transition: 0.5;
+  }
+  
+  .overlay i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+    background: white;
+  }
+  
+  .Product h4 {
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  .Product h4:nth-child(2) {
+    color: #FF7A00;
+    font-weight: bold;
+  }
+  
+  .Product h4 span {
+    color: black;
+    text-decoration: line-through;
+    margin-right: 20px;
+    color: #5e5e5e;
+  }
+  
+  .Product .box:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .Product i:hover {
+    background: #FF7A00;
+    color: white;
+  }
+  
+  /*----------Product-------------*/
+
+  /*----------sale-------------*/
+.sale img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  
+  .sale .left {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+  }
+  
+  .sale .right {
+    position: relative;
+  }
+  
+  .sale .text {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    transform: rotate(-90deg);
+  }
+  
+  .sale .text h2 {
+    font-size: 50px;
+    white-space: 4px;
+    font-weight: 500;
+    color: #5e5e5e;
+  }
+  
+  .sale .para {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .sale h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  
+  .sale a {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  
+  .sale .img {
+    overflow: hidden;
+  }
+  
+  .sale img:hover {
+    transform: scale(1.1);
+  }
+  
+  /*----------sale-------------*/
