@@ -6,35 +6,40 @@
     box-sizing: border-box;
 }
 
-body{
-    
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
-
 
 /*----------------------------------------*/
-.container{
+.container {
     max-width: 95%;
     margin: auto;
-}
-a {
+  }
+  
+  a {
     text-decoration: none;
     transition: 0.5s;
-}
-ul {
+  }
+  
+  ul {
     list-style: none;
-}
-.flex {
+  }
+  
+  .flex {
     display: flex;
-}
-.flex1{
+  }
+  
+  .flex1 {
     display: flex;
     justify-content: space-between;
-}
-i {
+  }
+  
+  i {
     cursor: pointer;
     transition: 0.5s;
-}
+  }
 
 /*----------------------------------------*/
 
@@ -104,7 +109,7 @@ header ul li a:hover {
     transition: 0.5s;
     height: 10vh;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
+   
   }
   @media only screen and (max-width:768px) {
     header nav ul {
@@ -376,3 +381,227 @@ header ul li a:hover {
   }
   
   /*----------sale-------------*/
+
+  /*----------blog-------------*/
+.blog .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .blog h1 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+  }
+  
+  .blog .date {
+    background: #f2f2f2;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .blog h4 {
+    font-weight: 400;
+  }
+  
+  .blog hr {
+    border: 1px solid #5e5e5e;
+    background: #5e5e5e;
+  }
+  
+  .blog .para {
+    margin-left: 20px;
+  }
+  
+  .blog h3 {
+    font-weight: 500;
+  }
+  
+  .blog p {
+    color: #5e5e5e;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .blog .text {
+    margin-top: 10px;
+  }
+  
+  /*----------blog-------------*/
+
+  /*----------footer-------------*/
+footer {
+    text-align: center;
+    background: #f2f2f2;
+  }
+  
+  footer .container {
+    padding: 30px 0 60px 0;
+  }
+  
+  footer ul {
+    display: inline-block;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  footer ul i:hover,
+  footer ul li:hover {
+    color: #FF7A00;
+    cursor: pointer;
+  }
+  
+  footer span {
+    font-size: 13px;
+  }
+  
+  footer i {
+    font-size: 18px;
+  }
+  
+  footer .text {
+    margin: 70px 0 70px 0;
+  }
+  
+  footer h3 {
+    font-weight: 500;
+    list-style: 3px;
+  }
+  
+  footer .input {
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin: auto;
+  }
+  
+  footer input {
+    background: none;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  footer label {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  
+  .legal {
+    padding: 20px;
+    font-size: 13px;
+  }
+  
+  /*----------footer-------------*/
+  @media only screen and (max-width:768px) {
+
+    .home .box_right .img,
+    .box_left,
+    .box_right,
+    .home {
+      height: auto;
+    }
+  
+    .offer .left,
+    .offer .right {
+      margin-top: 0px;
+    }
+  
+    .offer .text {
+      top: 0%;
+      left: 0%;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .sale .container {
+      flex-direction: column;
+    }
+  
+    .sale img {
+      width: auto;
+      height: auto;
+    }
+  
+    .sale .right,
+    .sale .left {
+      width: 100%;
+    }
+  
+    .sale .right {
+      margin-top: 20%;
+    }
+  
+    .sale .text {
+      left: -10%;
+    }
+  
+    .blog .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width:511px) {
+    .account {
+      display: none;
+    }
+  
+    header nav ul {
+      position: absolute;
+      top: 40px;
+    }
+  
+    .home .container,
+    .offer .container {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .home img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  
+    .grid,
+    .blog .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .home .box_right .img,
+    .box_right,
+    .box_left {
+      width: 100%;
+    }
+  
+    .sale .left,
+    .offer .right,
+    .offer .left {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    .sale .left {
+      margin-bottom: 50px;
+    }
+  
+    footer .head {
+      flex-direction: column;
+    }
+  
+    footer .input {
+      width: 100%;
+    }
+  }
