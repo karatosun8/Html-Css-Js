@@ -2,6 +2,7 @@
 const correctAnswer = ["E","E","E","E"] // 4 adet soru olduğu için 4 adet valuesi "E" olan cevap için dizi oluşturduk 
 
 const form =document.querySelector(".question-form");
+const result =document.querySelector(".result")
 
 
 //Form submit olduğunda
@@ -19,6 +20,8 @@ form.addEventListener("submit",e =>{
         }
     })
 
-    console.log(score);
+    // console.log(score);
+    result.classList.remove("d-none")
+    result.querySelector("span").textContent = `${score} %`
 })
 
