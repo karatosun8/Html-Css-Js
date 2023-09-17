@@ -22,6 +22,19 @@ form.addEventListener("submit",e =>{
 
     // console.log(score);
     result.classList.remove("d-none")
-    result.querySelector("span").textContent = `${score} %`
+
+    let puan =0;
+    const bastır=setInterval(()=>{
+        result.querySelector("span").textContent = `${puan} %`
+        if(puan == score)
+        {
+            clearInterval(bastır)
+        }
+        else
+        {
+            puan ++;
+        }
+    },10)
+    
 })
 
