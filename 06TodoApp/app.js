@@ -22,5 +22,12 @@ addForm.addEventListener("submit",e=>{
         addForm.reset() //Yazılanların formadan silinmesi için
     }
 
-    
+})
+
+//Delete işlemi
+list.addEventListener("click",e=>{
+    if(e.target.classList.contains("delete"))
+    {
+        e.target.parentElement.remove()
+    }
 })
