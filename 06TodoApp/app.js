@@ -1,5 +1,6 @@
 const addForm = document.querySelector(".add");
 const list =document.querySelector(".todos");
+const search =document.querySelector(".search input")
 
 
 const generateTemplate = (todo)=>{
@@ -30,4 +31,25 @@ list.addEventListener("click",e=>{
     {
         e.target.parentElement.remove()
     }
+})
+
+const filterTodos = (term)=>{
+    // console.log(term);
+    // console.log(list.children);
+    // //Html Collectionda forEach Kullanamadığımız için Arra.from ile işlem yaptık
+    // console.log(Array.from(list.children));
+    Array.from(list.children)
+    .filter (todo => !todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.add("filtered"))
+    Array.from(list.children)
+    .filter (todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove("filtered"))
+}
+//search işlemi
+//Klavyede her harf girişinde arama yapması için keyup eventini kullandık
+search.addEventListener("keyup",()=>{
+    const term =search.value.trim().toLowerCase()
+    // console.log(term);
+    filterTodos(term)
+
 })
